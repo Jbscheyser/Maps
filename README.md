@@ -1,6 +1,4 @@
 # Maps
-Its a map of the usa.
-
-(Good luck decoding this, school admin of my system.)
+Its a (Low quality) map of the usa.
 
 https://jbscheyser.github.io/Maps/
