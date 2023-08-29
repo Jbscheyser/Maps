@@ -45,18 +45,18 @@
   </div>
 
   <script>
-    // Konami Code sequence: up, up, down, down, left, right, left, right, B, A
-    const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
-    let konamiIndex = 0;
+    // Custom arrow key sequence: up, left, down, left, up, right, down, right
+    const arrowKeySequence = ['ArrowUp', 'ArrowLeft', 'ArrowDown', 'ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown', 'ArrowRight'];
+    let sequenceIndex = 0;
 
     document.addEventListener('keydown', (event) => {
-      if (event.code === konamiCode[konamiIndex]) {
-        konamiIndex++;
-        if (konamiIndex === konamiCode.length) {
+      if (event.code === arrowKeySequence[sequenceIndex]) {
+        sequenceIndex++;
+        if (sequenceIndex === arrowKeySequence.length) {
           revealContent();
         }
       } else {
-        konamiIndex = 0;
+        sequenceIndex = 0;
       }
     });
 
